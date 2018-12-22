@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toRightOf="@id/logo"
+            android:text="Lisensi Dasar"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_marginHorizontal="8dp"
+            android:text=" Rp. 100.000"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_margin="16dp"
+            android:text=" Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Maecenas in augue mollis, sodales ipsum vitae, euismod turpis.
+Donec eget nisl eleifend, ullamcorper ipsum a, viverra quam.
+In eget est ac sapien efficitur mollis.
+Duis ullamcorper ligula vel metus varius dapibus."
+            android:textColor="@android:color/white" />
+        <Button
+            android:id="@+id/btn_buy"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:textColor="@android:color/white"
+            android:text="Beli dan UNDUH"
+            android:layout_below="@id/content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
